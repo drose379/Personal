@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
+@import url('https://fonts.googleapis.com/css?family=Ranga:700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+}
+
+.nav {
+  background: white;
+  display: flex;
+  color: black;
+}
+
+.nav-left {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 2em;
+  font-family: 'Ranga', cursive;
+}
+
+.nav-left h1 {
+  font-family: 'Ranga', cursive;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-left img {
+  width: 100%;
+}
+
+.nav-left .avatar-reg {
+  width: 1.3em;
+  flex-grow: 0;
+  vertical-align: middle;
+  margin-left: 2em;
+}
+
+.nav-right {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-right .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+}
+
+/*
+.nav-right .btn:hover {
+  color: mediumseagreen;
+}
+*/
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-itm:hover {
+  color: mediumseagreen;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.home .home-head {
+  display: flex;
+  flex-direction: column;
+  padding: 4em;
+  width: 70%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+}
+
+.home img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.home .home-head .link {
+  height: 1.3em;
+  margin-right: 5px;
+  padding-top: 4px;
+}
+
+.home .home-head h3 {
+  margin-bottom: 0.5em;
+  margin-top: 0;
+}
+
+#sub {
+  color: #424242;
+  font-size: 0.8em;
+  width: 55%;
+  margin-bottom: 0.5em;
+}
+
+.home .home-skills {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 4em;
+  padding-right: 4em;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+}
+
+.home .home-skills .skill-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.home .home-skills .skill-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 0;
+  margin-right: 1em;
+}
+
+.home .home-skills .skill-box h5 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+}
+
+.skill-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.skill-box .skill-img {
+  width: 1.5em;
+}
+
+.skill-box p {
+  color: #424242;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.secondary-skills {
+  margin-top: 0.5em;
+  width: 100%;
+  background-color: seagreen;
+}
+
+.secondary-skills h5 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+}

@@ -1,0 +1,28 @@
+.nav {
+  flex-direction: column !important;
+}
+
+.nav-left  {
+  flex-grow: 0 !important;
+}
+
+.nav-left h1 {
+  display: none;
+}
+
+.nav-right .btn {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.nav img {
+  margin: 0.2em;
+}
+
+.avatar-reg {
+  margin-left: 0 !important;
+}
+
+.home {
+  display: none;
+}
