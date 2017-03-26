@@ -32,5 +32,17 @@
 }
 
 .home {
-  display: none;
+  /*display: none;*/
+}
+
+.home .home-head {
+}
+
+#sub {
+  width: 100% !important;
+  background-color: mediumseagreen;
+}
+
+.home-skills {
+  display: none !important;
 }
