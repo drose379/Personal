@@ -37,6 +37,9 @@
 
 .home .home-head {
   font-size: 2.5em !important;
+  padding-left: 0em;
+  padding-right: 0em;
+  width: 90%;
 }
 
 #sub {
@@ -45,6 +48,8 @@
 
 .home-skills {
   font-size: 2.5em !important;
+  padding: 0em !important;
+  width: 90% !important;
 }
 
 .skill-box h5 {
@@ -54,3 +59,6 @@
 .skill-container {
   flex-direction: column !important;
 }
+
+/*
+Fix margin and padding issue of skill boxes icons to titles */
