@@ -50,6 +50,10 @@
   font-size: 2.5em !important;
 }
 
+.skill-box h5 {
+  font-size: 0.5em !important;
+}
+
 .skill-container {
   flex-direction: column !important;
 }
