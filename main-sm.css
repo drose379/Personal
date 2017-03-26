@@ -43,6 +43,6 @@
   width: 100% !important;
 }
 
-.home-skills {
-  display: none !important;
+.skill-container {
+  flex-direction: column !important;
 }
