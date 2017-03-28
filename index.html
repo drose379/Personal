@@ -30,8 +30,9 @@
 
   </nav>
 
-  <div class="home">
+  <div class="home"> <!--SHOULD BE OF CLASS 'SECTION' LIKE BELOW  -->
 
+    <!--
     <div class="home-head">
       <h3>hi, I'm Dylan &mdash; an aspiring software developer!</h3>
       <h3 id="sub">I love building things. I have experience building web and native mobile applications. Currently I am working on expanding my knowledge of front end web development.</h3>
@@ -43,6 +44,18 @@
     </span>
 
     </div>
+
+  -->
+
+  <div id="home" class="section-container column">
+    <h3>hi, I'm Dylan &mdash; an aspiring software developer!</h3>
+    <h3 id="sub">I love building things. I have experience building web and native mobile applications. Currently I am working on expanding my knowledge of front end web development.</h3>
+    <span>
+    <a href="#"><img class="link" src="res/github-grey.svg" onmouseover="handleLinkHover('1',this)" onmouseout="handleLinkUnhover('1',this)"/></a>
+    <a href="#"><img class="link" src="res/linkedin-grey.svg" onmouseover="handleLinkHover('2',this)" onmouseout="handleLinkUnhover('2',this)" /></a>
+    <a href="#"><img class="link" src="res/download.svg" onmouseover="handleLinkHover('3',this)" onmouseout="handleLinkUnhover('3',this)" /></a>
+   </span>
+  </div>
 
     <div class="home-skills">
       <h3>my skills & interests</h3>
@@ -65,7 +78,7 @@
         [][][]
         [====]
       -->
-      <div class="skill-container">
+      <div class="skill-container"> <!-- SHOULD BE CLASS SECTION-CONTAINER -->
         <div class="skill-box">
           <img class="skill-img" src="res/computer.svg" />
           <h5>Software Development</h5>
@@ -93,7 +106,7 @@
 
   <div id="about" class="section">
 
-    <div class="section-container">
+    <div class="section-container column">
       <h3>what you should know &mdash; a brief summary</h3>
       <h3 id="sub">A drone-flying, motorcycle-riding vegetarian software guy, whos trying to grow his design skill too.</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.
@@ -103,13 +116,18 @@
 
   </div>
 
-<!--
+
   <div class="section">
-    <div class="section-container">
-      <h3>Test section</h3>
+    <div class="section-container column">
+      <h3>things I've built &mdash; my favorite part</h3>
+      <p>Write first about Andorid app. Have screenshots and description about process of building here</p>
+      <!-- For display, maybe app logo with title below, then 2 or 3 screenshots, and to the right of the screenshots is the desc / stats -->
+      <!-- NEED A GREAT DISPLAY FOR ALL BUT HOME APP, WITH SCREENSHOTS AND APP LOGO -->
+      <!-- ALSO TALK ABOUT FRONT END WORK DONE AT FIDELITY, AND SKILLS DEVELOPED AT SKYCORE -->
+      <!-- INCLUDE THIS WEBSITE AS A BIG TALKING POINT!!! -->
     </div>
   </div>
--->
+
 
 </body>
 
