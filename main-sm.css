@@ -1,3 +1,5 @@
+/* BEGIN NAV ITEMS */
+
 .nav {
   flex-direction: column !important;
 }
@@ -31,31 +33,25 @@
   width: 3em !important;
 }
 
-.home {
-  /*display: none;*/
-}
+/* END NAV ITEMS */
 
-.home .home-head {
+.section-container {
   font-size: 2.5em !important;
-  padding-left: 0em;
-  padding-right: 0em;
-  width: 90%;
-}
-
-#sub {
-  width: 100% !important;
-}
-
-.home-skills {
-  font-size: 2.5em !important;
-  padding: 0em !important;
+  padding-left: 0em !important;
+  padding-right: 0em !important;
   width: 90% !important;
 }
 
-.skill-box h5 {
-  font-size: 0.5em !important;
+
+.sub {
+  width: 100% !important;
 }
 
-.skill-container {
-  flex-direction: column !important;
+.row {
+  flex-direction: column;
+}
+
+
+.skill-box h5 {
+  font-size: 0.5em !important;
 }

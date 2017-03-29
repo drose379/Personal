@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <title>Dylan Rose</title>
   <link rel="stylesheet" type="text/css" href="main.css"/>
   <link rel="stylesheet" type="text/css" href="main-sm.css" media="(max-width: 1000px)" />
   <link rel="icon" type="image/png" href="res/icon.png" />
@@ -30,7 +31,7 @@
 
   </nav>
 
-  <div class="home"> <!--SHOULD BE OF CLASS 'SECTION' LIKE BELOW  -->
+  <div class="section"> <!--SHOULD BE OF CLASS 'SECTION' LIKE BELOW  -->
 
     <!--
     <div class="home-head">
@@ -48,8 +49,8 @@
   -->
 
   <div id="home" class="section-container column">
-    <h3>hi, I'm Dylan &mdash; an aspiring software developer!</h3>
-    <h3 id="sub">I love building things. I have experience building web and native mobile applications. Currently I am working on expanding my knowledge of front end web development.</h3>
+    <h3 class="nomargin">hi, I'm Dylan &mdash; an aspiring software developer!</h3>
+    <h3 class="sub">I love building things. I have experience building web and native mobile applications. Currently I am working on expanding my knowledge of front end web development.</h3>
     <span>
     <a href="#"><img class="link" src="res/github-grey.svg" onmouseover="handleLinkHover('1',this)" onmouseout="handleLinkUnhover('1',this)"/></a>
     <a href="#"><img class="link" src="res/linkedin-grey.svg" onmouseover="handleLinkHover('2',this)" onmouseout="handleLinkUnhover('2',this)" /></a>
@@ -57,7 +58,10 @@
    </span>
   </div>
 
-    <div class="home-skills">
+
+
+
+    <div class="section-container column">
       <h3>my skills & interests</h3>
 
       <!-- GO 3 boxes across using flexbox set each to flex-grow: 1 and use padding / margin on the boxes:
@@ -78,7 +82,8 @@
         [][][]
         [====]
       -->
-      <div class="skill-container"> <!-- SHOULD BE CLASS SECTION-CONTAINER -->
+
+      <div class="row"> <!-- SHOULD BE CLASS SECTION-CONTAINER -->
         <div class="skill-box">
           <img class="skill-img" src="res/computer.svg" />
           <h5>Software Development</h5>
@@ -99,16 +104,14 @@
       </div>
     </div>
 
-    <!-- NEXT SECTION IS ABOUT, START OFF WTIH SAME STYLE INTRO AS HI,IM DYLAN... HAVE TEXT "WHAT I'M UP TO"
-      GIVE THIS TEXT AS MUCH TOP MARGIN AS THE MY SKILLS / INTERESTS SECTION HAS FROM THE SOCIAL ICONS -->
-
   </div>
+
 
   <div id="about" class="section">
 
     <div class="section-container column">
-      <h3>what you should know &mdash; a brief summary</h3>
-      <h3 id="sub">A drone-flying, motorcycle-riding vegetarian software guy, whos trying to grow his design skill too.</h3>
+      <h3 class="nomargin">what you should know &mdash; a brief summary</h3>
+      <h3 class="nomargin sub bottom-margin">A drone-flying, motorcycle-riding vegetarian software guy, whos trying to grow his design skill too.</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.
       </p>
@@ -119,7 +122,8 @@
 
   <div class="section">
     <div class="section-container column">
-      <h3>things I've built &mdash; my favorite part</h3>
+      <h3 class="nomargin">things I've built &mdash; my favorite part</h3> <!-- COULD BE: 'THINGS I'VE BUILT AND WHAT I'M UP TO'-->
+      <h3 class="nomargin sub bottom-margin">Don't think any sub is needed</h3>
       <p>Write first about Andorid app. Have screenshots and description about process of building here</p>
       <!-- For display, maybe app logo with title below, then 2 or 3 screenshots, and to the right of the screenshots is the desc / stats -->
       <!-- NEED A GREAT DISPLAY FOR ALL BUT HOME APP, WITH SCREENSHOTS AND APP LOGO -->
