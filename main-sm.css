@@ -51,7 +51,25 @@
   flex-direction: column;
 }
 
+#stars {
+  flex-direction: row;
+}
+
+#screenshots {
+  margin-top: 0.5em;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.screenshot {
+  height: 8em;
+}
+
 
 .skill-box h5 {
   font-size: 0.5em !important;
+}
+
+.project-container {
+  flex-direction: column;
 }
