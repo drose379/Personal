@@ -58,11 +58,10 @@
 #screenshots {
   margin-top: 0.5em;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .screenshot {
-  height: 8em;
 }
 
 
