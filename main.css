@@ -170,10 +170,12 @@ a {
   margin: 0;
 }
 
+
+
 .project-container {
-  margin-top: 0.5em;
   display: flex;
   flex-direction: row;
+  margin-top: 0.5em;
 }
 
 .project-container h3 {
