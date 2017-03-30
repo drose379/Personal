@@ -23,7 +23,7 @@ foreach( $current as $rate ) {
 // Divide that by the number of items in the array to get the average (round decimal down)
 
 header('Access-Control-Allow-Origin: *');
-error_log( $newRate);
+error_log( json_encode( $current ) );
 
 
 // Update averagerate and ratecount properties of file
