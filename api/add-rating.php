@@ -11,8 +11,8 @@ $current = $info["rates"];
 $current[] = $newRate;
 
 $response = [];
-$response["ratecount"] = 2;
-$response["averagerate"] = 3;
+$response["ratecount"] = "2";
+$response["averagerate"] = "3";
 $response["rates"] = $current;
 file_put_contents( "rates.json", json_encode( $response ) );
 
