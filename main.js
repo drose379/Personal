@@ -20,7 +20,7 @@ window.onload = function() {
     console.log( "received: " + this.responseText );
   }
 
-  http.open( "GET", "http://google.com" );
+  http.open( "GET", "http://dylanrose.me/Personal/api/get-rate-info.php" );
   http.send();
 
 
