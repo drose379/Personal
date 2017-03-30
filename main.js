@@ -19,7 +19,14 @@ window.onload = function() {
   http.onreadystatechange = function() {
     if( this.readyState == 4 && this.status == 200 ) {
       var resp = JSON.parse( this.responseText );
-      console.log( resp.rate-count );
+      // ratecount
+      // averagerate
+
+      for( var i = 0; i < resp.averagerate; i++ ) {
+        stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
+        document.getElementById( "ratecount" ).innerText = resp.ratecount + " Votes";
+      }
+
     }
   }
 
