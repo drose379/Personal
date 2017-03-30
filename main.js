@@ -15,10 +15,20 @@ window.onload = function() {
 
       let rHttp = new XMLHttpRequest();
       rHttp.onreadystatechange = function () {
-        console.log( this.readyState );
+        if( this.readyState == 4 && this.status == 200 ) {
+          // Update the stars and average count, say thank you for vote
+
+          var resp = JSON.parse( this.responseText );
+          for( var i = 0; i < resp.averagerate; i++ ) {
+            stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
+          }
+
+          document.getElementById( "ratecount" ).innerText = resp.ratecount + " Votes";
+
+        }
       };
       rHttp.open( "POST", "http://dylanrose.me/Personal/api/add-rating.php" );
-      //rHttp.send( JSON.stringify( {"newrate": rating} ) );
+      rHttp.send( JSON.stringify( {"newrate": rating} ) );
 
 
   });
@@ -32,8 +42,9 @@ window.onload = function() {
 
       for( var i = 0; i < resp.averagerate; i++ ) {
         stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
-        document.getElementById( "ratecount" ).innerText = resp.ratecount + " Votes";
       }
+
+      document.getElementById( "ratecount" ).innerText = resp.ratecount + " Votes";
 
     }
   }
