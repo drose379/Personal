@@ -10,7 +10,9 @@ $current = $info["rates"];
 
 
 // Add the newRate to the end of the array
-array_push( $current, $newRate );
+$current[] = $newRate;
+
+file_put_contents( "rates.json", json_encode( $current ) );
 
 
 // Loop through the array with the newRate, add them all up
