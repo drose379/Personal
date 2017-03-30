@@ -2,19 +2,27 @@ window.onload = function() {
   // Need to set listeners on the site rate stars (show thank you dialog on submit)
   // Need to load the average rating for the rate stars and set the right image resources.
   // Need to set the number of votes count to the right of the stars
+  var http = new XMLHttpRequest();
   var stars = document.getElementsByClassName( 'rate-star' );
+
+  /*
   for( var i = 0; i < stars.length; i++ ) {
     stars[i].addEventListener( 'click', function( event ) {
       var rating = this.getAttribute( 'data-rate' );
 
-      // Write this rating to a file
-      var http = new XMLHttpRequest();
-      http.onreadystatechange = function() {
-        
-      };
+      // Send this rating to api to record it and send back new vote count and average
 
-    } );
   }
+  */
+
+
+  http.onreadystatechange = function() {
+    console.log( "received: " + this.responseText );
+  }
+
+  http.open( "GET", "http://google.com" );
+  http.send();
+
 
 
 
