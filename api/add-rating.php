@@ -10,7 +10,7 @@ $current = $info["rates"];
 
 
 // Add the newRate to the end of the array
-$current[] = $newRate;
+array_push( $current, $newRate );
 
 
 // Loop through the array with the newRate, add them all up
