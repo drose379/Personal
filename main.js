@@ -1,26 +1,34 @@
+var averageRate = null;
+var stars = null;
+
 window.onload = function() {
   // Need to set listeners on the site rate stars (show thank you dialog on submit)
   // Need to load the average rating for the rate stars and set the right image resources.
   // Need to set the number of votes count to the right of the stars
-  var http = new XMLHttpRequest();
-  var stars = document.getElementsByClassName( 'rate-star' );
+  stars = document.getElementsByClassName( 'rate-star' );
 
-  /*
   for( var i = 0; i < stars.length; i++ ) {
     stars[i].addEventListener( 'click', function( event ) {
       var rating = this.getAttribute( 'data-rate' );
 
       // Send this rating to api to record it and send back new vote count and average
 
-  }
-  */
+      let rHttp = new XMLHttpRequest();
+      rHttp.onreadystatechange = function () {
+        console.log( this.readyState );
+      };
+      rHttp.open( "POST", "http://dylanrose.me/Personal/api/add-rating.php" );
+      //rHttp.send( JSON.stringify( {"newrate": rating} ) );
 
 
+  });
+}
+
+  var http = new XMLHttpRequest();
   http.onreadystatechange = function() {
     if( this.readyState == 4 && this.status == 200 ) {
       var resp = JSON.parse( this.responseText );
-      // ratecount
-      // averagerate
+      averageRate = resp.averagerate;
 
       for( var i = 0; i < resp.averagerate; i++ ) {
         stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
@@ -72,7 +80,11 @@ function handleLinkUnhover( which, element ) {
 }
 
 function starHover( which ) {
-  var stars = document.getElementsByClassName( 'rate-star' );
+
+  // If the star being hovered over is less then (averageRate -1), clear stars and then run the highlight below
+
+  if( which < (averageRate - 1) )
+    clearStars();
 
   for( var i = 0; i <= which; i++ ) {
     stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
@@ -80,13 +92,16 @@ function starHover( which ) {
 }
 
 function starUnHover( which ) {
-  var stars = document.getElementsByClassName( 'rate-star' );
+  clearStars();
 
-  for( var i = 0; i < stars.length; i++ ) {
-
-    /** NEED TO SET THE HIGHLIGHTED STARS BACK TO WHERE THEY WERE ON PAGE LOAD (ON THE AVERAGE) */
-
-    stars[i].setAttribute( 'src', 'res/star-unfill.png' )
+  for( var i = 0; i < averageRate; i++ ) {
+    stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
   }
 
+}
+
+function clearStars() {
+  for( var i = 0; i < stars.length; i++ ) {
+    stars[i].setAttribute( 'src', 'res/star-unfill.png' );
+  }
 }

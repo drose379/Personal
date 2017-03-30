@@ -1,7 +1,9 @@
 <?php
 
 $info = json_decode( file_get_contents( "rate.json" ), true );
-$newRate = json_decode( file_get_contents( "php://info" ), true );
+$newRate = json_decode( file_get_contents( "php://info" ), true )["newrate"];
+
+echo "Sah"
 
 // Get the array of current rates
 
