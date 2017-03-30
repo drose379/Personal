@@ -1,6 +1,6 @@
 <?php
 
-$info = json_decode( file_get_contents( "rate.json" ), true );
+$info = json_decode( file_get_contents( "rates.json" ), true );
 $newRate = json_decode( file_get_contents( "php://info" ), true )["newrate"];
 
 header('Access-Control-Allow-Origin: *');
