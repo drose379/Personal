@@ -51,7 +51,7 @@
   flex-direction: column;
 }
 
-#stars {
+.stars {
   flex-direction: row;
 }
 

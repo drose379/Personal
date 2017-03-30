@@ -4,7 +4,7 @@
   <title>Dylan Rose</title>
   <link rel="stylesheet" type="text/css" href="main.css"/>
   <link rel="stylesheet" type="text/css" href="main-sm.css" media="(max-width: 1000px)" />
-  <link rel="icon" type="image/png" href="res/icon.png" />
+
 
   <script type="text/javascript" src="main.js"></script>
 </head>
@@ -35,124 +35,107 @@
 
     <!--
     <div class="home-head">
-      <h3>hi, I'm Dylan &mdash; an aspiring software developer!</h3>
-      <h3 id="sub">I love building things. I have experience building web and native mobile applications. Currently I am working on expanding my knowledge of front end web development.</h3>
+    <h3>hi, I'm Dylan &mdash; an aspiring software developer!</h3>
+    <h3 id="sub">I love building things. I have experience building web and native mobile applications. Currently I am working on expanding my knowledge of front end web development.</h3>
 
-      <span>
-      <a href="#"><img class="link" src="res/github-grey.svg" onmouseover="handleLinkHover('1',this)" onmouseout="handleLinkUnhover('1',this)"/></a>
-      <a href="#"><img class="link" src="res/linkedin-grey.svg" onmouseover="handleLinkHover('2',this)" onmouseout="handleLinkUnhover('2',this)" /></a>
-      <a href="#"><img class="link" src="res/download.svg" onmouseover="handleLinkHover('3',this)" onmouseout="handleLinkUnhover('3',this)" /></a>
-    </span>
-
-    </div>
-
-  -->
-
-  <div id="home" class="section-container column">
-    <h3 class="nomargin">hi, I'm Dylan &mdash; an aspiring software developer!</h3>
-    <h3 class="sub">I love building things. I have experience building web and native mobile applications. Currently I am working on expanding my knowledge of front end web development.</h3>
     <span>
     <a href="#"><img class="link" src="res/github-grey.svg" onmouseover="handleLinkHover('1',this)" onmouseout="handleLinkUnhover('1',this)"/></a>
     <a href="#"><img class="link" src="res/linkedin-grey.svg" onmouseover="handleLinkHover('2',this)" onmouseout="handleLinkUnhover('2',this)" /></a>
     <a href="#"><img class="link" src="res/download.svg" onmouseover="handleLinkHover('3',this)" onmouseout="handleLinkUnhover('3',this)" /></a>
-   </span>
+  </span>
+
+</div>
+
+-->
+
+<div id="home" class="section-container column">
+  <h3 class="nomargin">hi, I'm Dylan &mdash; an aspiring software developer!</h3>
+  <h3 class="sub">I love building things. I have experience building web and native mobile applications. Currently I am working on expanding my knowledge of front end web development.</h3>
+  <span>
+    <a href="#"><img class="link" src="res/github-grey.svg" onmouseover="handleLinkHover('1',this)" onmouseout="handleLinkUnhover('1',this)"/></a>
+    <a href="#"><img class="link" src="res/linkedin-grey.svg" onmouseover="handleLinkHover('2',this)" onmouseout="handleLinkUnhover('2',this)" /></a>
+    <a href="#"><img class="link" src="res/download.svg" onmouseover="handleLinkHover('3',this)" onmouseout="handleLinkUnhover('3',this)" /></a>
+  </span>
+</div>
+
+
+
+
+<div class="section-container column">
+  <h3>my skills & interests</h3>
+
+  <!-- GO 3 boxes across using flexbox set each to flex-grow: 1 and use padding / margin on the boxes:
+  POSSIBLY WITH NO BACKGROUND ON THE BOXES.
+  MAKE THE TEXT IN THE BOXES THE SAME COLOR AS THE SUBTEXT OF THE HEAD
+  Box 1: Mobile Application Development (WITH AN ICON)
+  Box 2: Web Application Development (WITH AN ICON)
+  Box 3: Web Application Design / UI UX Design (WITH AN ICON)
+  Possibly a box below spanning the entire width of 3 big boxes, inside full width would be smaller boxes with
+  other interests. center items in the full width box
+
+  Big boxes: Left aligned: ICON then title then description
+
+  [IC]
+  Title Here
+  Content about the subject can go here
+
+  [][][]
+  [====]
+-->
+
+<div class="row"> <!-- SHOULD BE CLASS SECTION-CONTAINER -->
+  <div class="skill-box">
+    <img class="skill-img" src="res/computer.svg" />
+    <h5>Software Development</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.</p>
   </div>
 
-
-
-
-    <div class="section-container column">
-      <h3>my skills & interests</h3>
-
-      <!-- GO 3 boxes across using flexbox set each to flex-grow: 1 and use padding / margin on the boxes:
-        POSSIBLY WITH NO BACKGROUND ON THE BOXES.
-        MAKE THE TEXT IN THE BOXES THE SAME COLOR AS THE SUBTEXT OF THE HEAD
-        Box 1: Mobile Application Development (WITH AN ICON)
-        Box 2: Web Application Development (WITH AN ICON)
-        Box 3: Web Application Design / UI UX Design (WITH AN ICON)
-        Possibly a box below spanning the entire width of 3 big boxes, inside full width would be smaller boxes with
-        other interests. center items in the full width box
-
-        Big boxes: Left aligned: ICON then title then description
-
-        [IC]
-        Title Here
-        Content about the subject can go here
-
-        [][][]
-        [====]
-      -->
-
-      <div class="row"> <!-- SHOULD BE CLASS SECTION-CONTAINER -->
-        <div class="skill-box">
-          <img class="skill-img" src="res/computer.svg" />
-          <h5>Software Development</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.</p>
-        </div>
-
-        <div class="skill-box">
-          <img class="skill-img" src="res/code-block-2.svg" />
-          <h5>Web Application Development</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.</p>
-        </div>
-
-        <div class="skill-box">
-          <img class="skill-img" src="res/design-1.svg" />
-          <h5>Web Design &mdash; UI / UX</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.</p>
-        </div>
-      </div>
-    </div>
-
+  <div class="skill-box">
+    <img class="skill-img" src="res/code-block-2.svg" />
+    <h5>Web Application Development</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.</p>
   </div>
 
+  <div class="skill-box">
+    <img class="skill-img" src="res/design-1.svg" />
+    <h5>Web Design &mdash; UI / UX</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.</p>
+  </div>
+</div>
+</div>
 
-  <div id="about" class="section">
+</div>
 
-    <div class="section-container column">
-      <h3 class="nomargin bottom-margin">what you should know &mdash; a brief summary</h3>
-      <h3 class="nomargin sub bottom-margin">A drone-piloting, motorcycle-riding vegetarian software guy, whos trying to grow his design skill too.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.
-      </p>
-    </div>
 
+<div id="about" class="section">
+
+  <div class="section-container column">
+    <h3 class="nomargin bottom-margin">what you should know &mdash; a brief summary</h3>
+    <h3 class="nomargin sub bottom-margin">A drone-piloting, motorcycle-riding vegetarian software guy, whos trying to grow his design skill too.</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.
+    </p>
   </div>
 
-
-  <div class="section">
-    <div class="section-container column">
-      <h3 class="nomargin bottom-margin">things I've built &mdash; my favorite part</h3> <!-- COULD BE: 'THINGS I'VE BUILT AND WHAT I'M UP TO'-->
-      <!-- For display, maybe app logo with title below, then 2 or 3 screenshots, and to the right of the screenshots is the desc / stats -->
-      <!-- NEED A GREAT DISPLAY FOR ALL BUT HOME APP, WITH SCREENSHOTS AND APP LOGO -->
-      <!-- ALSO TALK ABOUT FRONT END WORK DONE AT FIDELITY, AND SKILLS DEVELOPED AT SKYCORE -->
-      <!-- INCLUDE THIS WEBSITE AS A BIG TALKING POINT!!! -->
+</div>
 
 
-      <!--
-      <div class="project-container">
-        <img class="project-logo" src="res/all-but-home/all-but-home.png" />
-        <h3 class="sub">All But Home</h3>
-        <div class="row">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus</p>
-
-            <img class="screenshot" src="res/all-but-home/s1.png" />
-            <img class="screenshot" src="res/all-but-home/s1.png" />
-            <img class="screenshot" src="res/all-but-home/s1.png" />
-
-        </div>
-      </div>
-    -->
+<div class="section">
+  <div class="section-container column">
+    <h3 class="nomargin bottom-margin">putting my skills to use &mdash; the best part</h3> <!-- COULD BE: 'THINGS I'VE BUILT AND WHAT I'M UP TO'-->
+    <!-- For display, maybe app logo with title below, then 2 or 3 screenshots, and to the right of the screenshots is the desc / stats -->
+    <!-- NEED A GREAT DISPLAY FOR ALL BUT HOME APP, WITH SCREENSHOTS AND APP LOGO -->
+    <!-- ALSO TALK ABOUT FRONT END WORK DONE AT FIDELITY, AND SKILLS DEVELOPED AT SKYCORE -->
+    <!-- INCLUDE THIS WEBSITE AS A BIG TALKING POINT!!! -->
 
     <div class="project-container">
 
       <div id="desc" class="one-half column">
         <a target="_blank" href="https://play.google.com/store/apps/details?id=dylan.com.adoptapet&hl=en">
-          <img class="project-logo" src="res/all-but-home/all-but-home.png" />
+          <img class="project-logo-sq" src="res/all-but-home/all-but-home.png" />
           <h3 class="sub">All But Home</h3>
         </a>
-        <div id="stars" class="row">
+        <div class="stars row">
           <img class="star" src="res/all-but-home/star.png" />
           <img class="star" src="res/all-but-home/star.png" />
           <img class="star" src="res/all-but-home/star.png" />
@@ -161,7 +144,7 @@
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.</p>
         <p class="comment">"Between Dogs to Iguanas this app is full of adorable animals that need a new home without going all over the internet. This app makes it efficient and easy to look for your furever friend. If you are looking for a new friend download this app and adopt!"</p>
-    </div>
+      </div>
 
       <div id="screenshots" class="one-half row">
         <img class="screenshot" src="res/all-but-home/s1.png" />
@@ -171,9 +154,38 @@
 
     </div>
 
+
+    <div id="this-site" class="project-container">
+
+      <div id="desc" class="one-half column">
+        <img class="project-logo-rectangle" src="res/me.png" />
+        <h3 class="sub">Building This Website</h3>
+
+        <!-- NEED TO WRITE THE JS TO FILL IN STARS UP THE THE ONE BEING HOVERED OVER, ALSO SUBMIT THE RATE -->
+        <div class="row rate">
+          <h3 style="width: auto; margin-right: 0.5em" class="sub">Rate It: </h3>
+          <img class="star rate-star" data-rate="1" src="res/star-unfill.png" onmouseover="starHover( 0 )" onmouseout="starUnHover( 0 )" />
+          <img class="star rate-star" data-rate="2" src="res/star-unfill.png" onmouseover="starHover( 1 )" onmouseout="starUnHover( 1 )" />
+          <img class="star rate-star" data-rate="3" src="res/star-unfill.png" onmouseover="starHover( 2 )" onmouseout="starUnHover( 2 )"/>
+          <img class="star rate-star" data-rate="4" src="res/star-unfill.png" onmouseover="starHover( 3 )" onmouseout="starUnHover( 3 )"/>
+          <img style="margin-right: 0.5em" data-rate="5" class="star rate-star" src="res/star-unfill.png" onmouseover="starHover( 4 )" onmouseout="starUnHover( 4 )" />
+          <p>10 votes</p>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula neque vitae fringilla ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed egestas condimentum risus sit amet tempus.</p>
+      </div>
+
+      <div id="screenshots" class="one-half row">
+
+      </div>
+
     </div>
 
+
+
   </div>
+
+</div>
 
 </body>
 

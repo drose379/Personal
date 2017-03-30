@@ -182,8 +182,12 @@ a {
   margin-top: 0.5em;
 }
 
-.project-logo {
+.project-logo-sq {
   height: 2.5em;
+  width: 2.5em;
+}
+
+.project-logo-rectangle {
   width: 2.5em;
 }
 
@@ -203,10 +207,13 @@ a {
   flex: 1;
 }
 
+.stars {
+  margin-bottom: 0.5em;
+}
+
 .star {
   width: 0.7em;
   height: 0.7em;
-  margin-bottom: 0.5em;
 }
 
 .comment {
@@ -216,14 +223,25 @@ a {
   margin-top: 0.5em !important;
 }
 
+#this-site {
+  margin-top: 1em;
+}
 
 #desc {
   display: flex;
   justify-content: center;
 }
 
-
 #screenshots {
   justify-content: center;
   align-items: center;
+}
+
+.rate {
+  align-items: center;
+}
+
+.rate-star {
+  cursor: pointer;
+  cursor: hand;
 }
