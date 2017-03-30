@@ -83,6 +83,9 @@ function starUnHover( which ) {
   var stars = document.getElementsByClassName( 'rate-star' );
 
   for( var i = 0; i < stars.length; i++ ) {
+
+    /** NEED TO SET THE HIGHLIGHTED STARS BACK TO WHERE THEY WERE ON PAGE LOAD (ON THE AVERAGE) */
+
     stars[i].setAttribute( 'src', 'res/star-unfill.png' )
   }
 
