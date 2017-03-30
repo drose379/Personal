@@ -3,8 +3,6 @@
 $info = json_decode( file_get_contents( "rates.json" ), true );
 $newRate = json_decode( file_get_contents( "php://input" ), true )["newrate"];
 
-header('Access-Control-Allow-Origin: *');
-
 // Get the array of current rates
 $current = $info["rates"];
 
@@ -25,7 +23,7 @@ foreach( $current as $rate ) {
 // Divide that by the number of items in the array to get the average (round decimal down)
 
 header('Access-Control-Allow-Origin: *');
-error_log( json_encode( $current ) );
+error_log( json_encode( file_get_contents( "rates.json" ) ) );
 
 
 // Update averagerate and ratecount properties of file
