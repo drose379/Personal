@@ -1,7 +1,7 @@
 <?php
 
 $info = json_decode( file_get_contents( "rates.json" ), true );
-$newRate = json_decode( file_get_contents( "php://info" ), true )["newrate"];
+$newRate = json_decode( file_get_contents( "php://input" ), true )["newrate"];
 
 header('Access-Control-Allow-Origin: *');
 
