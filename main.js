@@ -17,7 +17,10 @@ window.onload = function() {
 
 
   http.onreadystatechange = function() {
-    console.log( "received: " + this.responseText );
+    if( this.readyState == 4 && this.status == 200 ) {
+      var resp = JSON.parse( this.responseText );
+      console.log( resp.rate-count );
+    }
   }
 
   http.open( "GET", "http://dylanrose.me/Personal/api/get-rate-info.php" );
