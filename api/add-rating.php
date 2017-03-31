@@ -25,7 +25,7 @@ $response["ratecount"] = $rateCount;
 $response["averagerate"] = $newAverage;
 $response["rates"] = $current;
 
-file_put_content( "rates.json", json_encode( $response ) );
+file_put_contents( "rates.json", json_encode( $response ) );
 
 header('Access-Control-Allow-Origin: *');
 echo json_encode( $response );
