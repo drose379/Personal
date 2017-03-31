@@ -29,7 +29,9 @@ window.onload = function() {
           swal({
             "title": "Thank You!",
             "text": "Thanks for voting!",
-            "confirmButtonText": "OK"
+            "timer": 1500,
+            "showConfirmButton": false,
+            "type": "success"
           });
 
         }
@@ -41,6 +43,7 @@ window.onload = function() {
   });
 }
 
+  // Get initial data
   var http = new XMLHttpRequest();
   http.onreadystatechange = function() {
     if( this.readyState == 4 && this.status == 200 ) {
