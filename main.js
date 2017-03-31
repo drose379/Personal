@@ -28,6 +28,12 @@ window.onload = function() {
 
           document.getElementById( "ratecount" ).innerText = resp.ratecount + " Votes";
 
+          swal({
+            "title": "Testing!",
+            "text": "Thanks for voting!",
+            "confirmButtonText": "OK"
+          });
+
         }
       };
       rHttp.open( "POST", "http://dylanrose.me/Personal/api/add-rating.php" );
@@ -94,9 +100,6 @@ function handleLinkUnhover( which, element ) {
 }
 
 function starHover( which ) {
-
-  // If the star being hovered over is less then (averageRate -1), clear stars and then run the highlight below
-
   if( which < (averageRate - 1) )
     clearStars();
 
@@ -110,11 +113,9 @@ function starUnHover( which ) {
   for( var i = 0; i < averageRate; i++ ) {
     stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
   }
-
 }
 
 function clearStars() {
-  console.log( "cleared" );
   for( var i = 0; i < stars.length; i++ ) {
     stars[i].setAttribute( 'src', 'res/star-unfill.png' );
   }
