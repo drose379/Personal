@@ -11,14 +11,17 @@ window.onload = function() {
     stars[i].addEventListener( 'click', function( event ) {
       var rating = this.getAttribute( 'data-rate' );
 
-      // Send this rating to api to record it and send back new vote count and average
-
       let rHttp = new XMLHttpRequest();
+
       rHttp.onreadystatechange = function () {
         if( this.readyState == 4 && this.status == 200 ) {
           // Update the stars and average count, say thank you for vote
-
+          clearStars();
           var resp = JSON.parse( this.responseText );
+          averageRate = resp.averagerate;
+
+          console.log( resp.averagerate + "---" + averageRate );
+
           for( var i = 0; i < resp.averagerate; i++ ) {
             stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
           }
@@ -104,7 +107,6 @@ function starHover( which ) {
 
 function starUnHover( which ) {
   clearStars();
-
   for( var i = 0; i < averageRate; i++ ) {
     stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
   }
@@ -112,6 +114,7 @@ function starUnHover( which ) {
 }
 
 function clearStars() {
+  console.log( "cleared" );
   for( var i = 0; i < stars.length; i++ ) {
     stars[i].setAttribute( 'src', 'res/star-unfill.png' );
   }
