@@ -14,7 +14,7 @@ $current[] = $newRate;
 // loop over current and get the new average, assign it to response, also write it to the rates.json file
 $rateSum = 0;
 foreach( $current as $rate ) {
-  $rateSum += $current;
+  $rateSum += $rate;
 }
 
 $newAverage = round( $rateSum / count( $current ) );
