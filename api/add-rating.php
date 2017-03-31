@@ -10,25 +10,25 @@ $current = $info["rates"];
 // Add the newRate to the end of the array
 $current[] = $newRate;
 
-$response = [];
-$response["ratecount"] = "2";
-$response["averagerate"] = "3";
-$response["rates"] = $current;
-file_put_contents( "rates.json", json_encode( $response ) );
 
-
-// Loop through the array with the newRate, add them all up
-$allRates = 0;
+// loop over current and get the new average, assign it to response, also write it to the rates.json file
+$rateSum = 0;
 foreach( $current as $rate ) {
-  $allRates += $rate;
+  $rateSum += $current;
 }
 
+$newAverage = round( $rateSum / count( $current ) );
+$rateCount = count( $current );
 
-// Divide that by the number of items in the array to get the average (round decimal down)
+$response = [];
+$response["ratecount"] = $rateCount;
+$response["averagerate"] = $newAverage;
+$response["rates"] = $current;
+
+file_put_content( "rates.json", json_encode( $response ) );
 
 header('Access-Control-Allow-Origin: *');
-
-error_log( json_encode( file_get_contents( "rates.json" ) ) );
+echo json_encode( $response );
 
 
 // Update averagerate and ratecount properties of file
