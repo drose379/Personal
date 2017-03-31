@@ -73,3 +73,11 @@
 .project-container {
   flex-direction: column;
 }
+
+.rate {
+  flex-direction: row !important;
+}
+
+.rate h3 {
+  width: auto !important;
+}
