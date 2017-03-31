@@ -21,7 +21,7 @@ window.onload = function() {
           averageRate = resp.averagerate;
 
           for( var i = 0; i < resp.averagerate; i++ ) {
-            stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
+            stars[i].setAttribute( 'src', 'res/star.png' );
           }
 
           document.getElementById( "ratecount" ).innerText = resp.ratecount + " Votes";
@@ -51,7 +51,7 @@ window.onload = function() {
       averageRate = resp.averagerate;
 
       for( var i = 0; i < resp.averagerate; i++ ) {
-        stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
+        stars[i].setAttribute( 'src', 'res/star.png' );
       }
 
       document.getElementById( "ratecount" ).innerText = resp.ratecount + " Votes";
@@ -105,14 +105,14 @@ function starHover( which ) {
     clearStars();
 
   for( var i = 0; i <= which; i++ ) {
-    stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
+    stars[i].setAttribute( 'src', 'res/star-blue.png' );
   }
 }
 
 function starUnHover( which ) {
   clearStars();
   for( var i = 0; i < averageRate; i++ ) {
-    stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
+    stars[i].setAttribute( 'src', 'res/star.png' );
   }
 }
 
