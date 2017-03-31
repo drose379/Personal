@@ -20,8 +20,6 @@ window.onload = function() {
           var resp = JSON.parse( this.responseText );
           averageRate = resp.averagerate;
 
-          console.log( resp.averagerate + "---" + averageRate );
-
           for( var i = 0; i < resp.averagerate; i++ ) {
             stars[i].setAttribute( 'src', 'res/all-but-home/star.png' );
           }
@@ -29,7 +27,7 @@ window.onload = function() {
           document.getElementById( "ratecount" ).innerText = resp.ratecount + " Votes";
 
           swal({
-            "title": "Testing!",
+            "title": "Thank You!",
             "text": "Thanks for voting!",
             "confirmButtonText": "OK"
           });
