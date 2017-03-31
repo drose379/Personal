@@ -81,3 +81,7 @@
 .rate h3 {
   width: auto !important;
 }
+
+#contact {
+  display: none;
+}

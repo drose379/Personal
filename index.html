@@ -4,11 +4,13 @@
   <title>Dylan Rose</title>
   <link rel="stylesheet" type="text/css" href="main.css"/>
   <link rel="stylesheet" type="text/css" href="main-sm.css" media="(max-width: 1000px)" />
+  <script type="text/javascript" src="main.js"></script>
 
+  <!-- Sweet Alert -->
   <script src="sweetalert/sweetalert-master/dist/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="sweetalert/sweetalert-master/dist/sweetalert.css">
 
-  <script type="text/javascript" src="main.js"></script>
+
 </head>
 
 <body>
@@ -122,7 +124,7 @@
 </div>
 
 
-<div class="section">
+<div id="portfolio" class="section">
   <div class="section-container column">
     <h3 class="nomargin bottom-margin">putting my skills to use &mdash; the best part</h3> <!-- COULD BE: 'THINGS I'VE BUILT AND WHAT I'M UP TO'-->
     <!-- For display, maybe app logo with title below, then 2 or 3 screenshots, and to the right of the screenshots is the desc / stats -->
@@ -188,6 +190,42 @@
   </div>
 
 </div>
+
+<div id="contact" class="section">
+  <div class="section-container centered-content-col column" style="margin-bottom: 4em;">
+    <h3>lets talk</h3>
+
+    <form>
+
+      <div class="row">
+        <div class="col fname">
+          <label for="first">First Name</label><br />
+          <input type="text" id="first" placeholder="First Name" />
+        </div>
+
+        <div class="col lname">
+          <label for="last">Last Name</label> <br />
+          <input type="text" id="last" placeholder="Last Name" />
+        </div>
+
+      </div>
+
+      <div class="col" style="margin-top: 1em;">
+        <label for="msg">Message</label><br />
+        <textarea style="width: 100%; padding: 0"></textarea>
+      </div>
+
+      <button type="submit" id="csub">
+        <img src="res/send-black.svg" />
+      </button>
+
+    </form>
+
+  </div>
+</div>
+
+
+<!-- NEED A WHITE FOOTER WITH FOOTER INFO INSIDE OF IT, MAYBE SAME SIZE AS NAV BAR (HEIGHT), MAYBE A BIT LARGER -->
 
 </body>
 
