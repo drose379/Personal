@@ -258,15 +258,16 @@ a {
   padding: 1em;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
-}
-
-
-.fname {
-  margin-right: 0.5em;
+  border: 3px solid #E0E0E0;
+  transition: 0.3s;
 }
 
 #contact input:focus {
+  border: 3px solid #2962FF;
+}
 
+.fname {
+  margin-right: 0.5em;
 }
 
 .lname {
@@ -279,6 +280,12 @@ a {
   height: 10em;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
+  border: 3px solid #E0E0E0;
+  transition: 0.3s;
+}
+
+#contact textarea:focus {
+  border: 3px solid #2962FF;
 }
 
 #contact button {
@@ -305,9 +312,19 @@ a {
   float: right;
 }
 
-#contact button:hover {
+
+#contact button:hover{
   border: 5px solid #2962FF;
   padding-left: 2em;
   padding-right: 2em;
   color: white;
 }
+
+#contact button:focus{
+  border: 5px solid #2962FF;
+  padding-left: 2em;
+  padding-right: 2em;
+  color: white;
+}
+
+/* NEED TO TAKE CARE OF ACTIVE TOO FOR DURING CLICK, JUST MAKE THE BACKGROUND COLOR A SHADE DARKER */
