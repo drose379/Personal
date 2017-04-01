@@ -4,6 +4,10 @@
   flex-direction: column !important;
 }
 
+.nav-content-wrapper {
+  flex-direction: column;
+}
+
 .nav-left  {
   flex-grow: 0 !important;
 }
