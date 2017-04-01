@@ -285,6 +285,16 @@ a {
   margin-right: 0.5em;
 }
 
+#replyto:valid {
+  background: url("res/valid.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-left: 1.5em !important;
+  background-color: white;
+  background-position: center left 0.2em;
+}
+
+
 .lname {
   margin-left: 0.5em;
 }

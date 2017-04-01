@@ -205,12 +205,12 @@
       <div class="row">
         <div class="col fname">
           <label for="first">First Name</label><br />
-          <input type="text" id="first" placeholder="First Name" />
+          <input required type="text" id="first" placeholder="John" />
         </div>
 
         <div class="col lname">
           <label for="last">Last Name</label> <br />
-          <input type="text" id="last" placeholder="Last Name" />
+          <input type="text" id="last" placeholder="Doe" />
         </div>
 
       </div>
@@ -218,12 +218,12 @@
       <!-- Need a Reply to: box ful width -->
       <div class="col" style="margin-top: 1em;">
         <label for="replyto">Reply To: </label> <br />
-        <input type="text" id="replyto" placeholder="Your Email" />
+        <input required type="email" id="replyto" placeholder="johndoe@email.com" />
       </div>
 
       <div class="col" style="margin-top: 1em;">
         <label for="msg">Message</label><br />
-        <textarea placeholder="Message"></textarea>
+        <textarea required placeholder="Hey Dylan!"></textarea>
       </div>
 
       <button type="submit" id="csub">
