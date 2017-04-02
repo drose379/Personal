@@ -251,10 +251,7 @@ a {
   margin-top: 1.5em;
 }
 
-#desc {
-  display: flex;
-  justify-content: center;
-}
+
 
 #screenshots {
   justify-content: center;

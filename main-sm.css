@@ -75,7 +75,7 @@
 }
 
 .project-container {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .rate {
@@ -85,6 +85,11 @@
 .rate h3 {
   width: auto !important;
 }
+
+.one-half {
+  flex: none;
+}
+
 
 #contact {
   display: none;
