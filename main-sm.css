@@ -98,3 +98,19 @@
   margin: 0 !important;
   margin-top: 1em !important;
 }
+
+#contact {
+}
+
+#contact form {
+  width: 100%;
+}
+
+#contact input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contact textarea {
+  width: 100% !important;
+}
