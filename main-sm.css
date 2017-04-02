@@ -13,13 +13,19 @@
 }
 
 .nav-left h5 {
-  display: none;
+  font-size: 3.5em;
+}
+
+.nav .img-wrap {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-right {
   justify-content: space-around !important;
-  margin-left: 1em;
-  margin-right: 1em;
 }
 
 .nav-right .btn {
@@ -34,7 +40,7 @@
 
 .avatar-reg {
   margin-left: 0 !important;
-  width: 3em !important;
+  width: 3.5em !important;
 }
 
 /* END NAV ITEMS */
