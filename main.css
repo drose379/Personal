@@ -306,7 +306,8 @@ a {
 
 #contact textarea {
   resize: none;
-  width: 93%;
+  width: 100%;
+  box-sizing: border-box;
   height: 10em;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 0.8em;
