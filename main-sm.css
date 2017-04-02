@@ -9,19 +9,15 @@
 }
 
 .nav-left  {
-  flex-grow: 0 !important;
+
 }
 
 .nav-left h5 {
-  font-size: 3.5em;
+  font-size: 5em;
 }
 
 .nav .img-wrap {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
 
 .nav-right {
