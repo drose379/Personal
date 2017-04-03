@@ -19,3 +19,5 @@ $sendResult = $mailgun->sendMessage(
     "text" => $data['message']
   )
 );
+
+error_log( $sendResult );
