@@ -72,6 +72,7 @@ window.onload = function() {
     sendicon.style.display="none";
     progress.style.display="block";
 
+    var fname = document.getElementById( "first" ).value
     var name = document.getElementById( "first" ).value
     + " "
     + document.getElementById( "last" ).value;
@@ -91,9 +92,27 @@ window.onload = function() {
       if( this.readyState == 4 && this.status == 200 ) {
         // Show a swal, if status is anything but 200 and readystate is 4, show error, but switch button back to regular send
         var messageSent = JSON.parse( this.responseText ).result == '200' ? true : false;
-        console.log( messageSent );
+        if( messageSent ) {
+
+          swal({
+            "title": "I'll be in touch",
+            "text": "Thanks for reaching out, " + fname + "! I'll get back to you as soon as I can!",
+            "timer": 1500,
+            "showConfirmButton": false,
+            "type": "success"
+          });
+
+          sendicon.style.display="block";
+          progress.style.display="none";
+
+          // Clear the form
+
+        } else {
+
+        }
+
       }
-    }
+    };
 
     http.open( "POST", "http://dylanrose.me/Personal/api/send-mail.php" );
     http.send( JSON.stringify( data ) );
