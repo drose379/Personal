@@ -13,7 +13,7 @@ error_log( json_encode( $data ) );
 $sendResult = $mailgun->sendMessage(
   $domain,
   array(
-    'from' => $data['name'] . " " . $data['replyto'],
+    'from' => $data['name'] . " <" . $data['replyto'] . ">",
     'to' => "Dylan <dylanrose60@gmail.com>",
     'subject' => "From Website",
     "text" => $data['message']
