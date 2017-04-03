@@ -360,12 +360,12 @@ a {
 }
 
 .progress {
-  width: 2em;
-  height: 2em;
+  width: 1.8em;
+  height: 1.8em;
   border-radius: 50%;
-  border: 10px solid #BDBDBD;
-  border-top: 10px solid #2962FF;
-  border-bottom: 10px solid #2962FF;
+  border: 0.3em solid #BDBDBD;
+  border-top: 0.3em solid #2962FF;
+  border-bottom: 0.3em solid #2962FF;
   animation: spin 1s linear infinite;
   display: none;
 }
