@@ -13,7 +13,7 @@ $sendResult = $mailgun->sendMessage(
   array(
     'from' => $data['name'] . "<dylanrose60@gmail.com>",
     'to' => "Dylan <dylanrose60@gmail.com>",
-    'subject' => "From Website",
+    'subject' => "From Website - " . $data['name'],
     "text" => $data['message'] . '--- FROM: ' . $data['replyto']
   )
 );
