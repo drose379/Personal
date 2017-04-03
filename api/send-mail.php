@@ -11,9 +11,9 @@ $domain = "sandboxde33fec0555248398f436cf70f466920.mailgun.org";
 $sendResult = $mailgun->sendMessage(
   $domain,
   array(
-    'from' => "Test Person <dylanrose60@gmail.com>",
+    'from' => $data['name'],
     'to' => "Dylan <dylanrose60@gmail.com>",
-    'subject' => "Dude it work?",
-    "text" => "Yes, asshole."
+    'subject' => "From Website",
+    "text" => $data['message']
   )
 );
