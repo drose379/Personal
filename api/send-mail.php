@@ -18,4 +18,5 @@ $sendResult = $mailgun->sendMessage(
   )
 );
 
+header('Access-Control-Allow-Origin: *');
 echo json_encode( array( 'result' => $sendResult->http_response_code ) );

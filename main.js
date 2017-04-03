@@ -90,6 +90,7 @@ window.onload = function() {
     http.onreadystatechange = function() {
       if( this.readyState == 4 && this.staus == 200 ) {
         // Show a swal, if status is anything but 200 and readystate is 4, show error, but switch button back to regular send
+        console.log( this.responseText );
       }
     }
 
