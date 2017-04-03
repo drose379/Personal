@@ -18,4 +18,4 @@ $sendResult = $mailgun->sendMessage(
   )
 );
 
-error_log( json_encode( $sendResult["http_response_code"] ) );
+error_log( json_encode $sendResult->http_response_code ) );
