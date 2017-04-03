@@ -88,9 +88,10 @@ window.onload = function() {
     var http = new XMLHttpRequest();
 
     http.onreadystatechange = function() {
-      if( this.readyState == 4 && this.staus == 200 ) {
+      if( this.readyState == 4 && this.status == 200 ) {
         // Show a swal, if status is anything but 200 and readystate is 4, show error, but switch button back to regular send
-        console.log( this.responseText );
+        var messageSent = JSON.parse( this.responseText ).result == '200' ? true : false;
+        console.log( messageSent );
       }
     }
 
