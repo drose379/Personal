@@ -63,6 +63,18 @@ window.onload = function() {
   http.send();
 
 
+  // Handle form submit
+  document.getElementById('contact-form').addEventListener( 'submit', function( event ) {
+    event.preventDefault();
+    document.getElementById( "send-img" ).style.display="none";
+    document.getElementById( "form-progress" ).style.display="block";
+    // Send the data over to api with ajax
+    // Switch the send button in the submit button with a loading spinner inside the button
+    // Show a swal for 1 second when successfully sent (response from ajax request)
+
+  } );
+
+
 
 
 }

@@ -359,4 +359,20 @@ a {
   color: white;
 }
 
+.progress {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 10px solid #BDBDBD;
+  border-top: 10px solid #2962FF;
+  border-bottom: 10px solid #2962FF;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
 /* NEED TO TAKE CARE OF ACTIVE TOO FOR DURING CLICK, JUST MAKE THE BACKGROUND COLOR A SHADE DARKER */
