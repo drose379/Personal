@@ -113,4 +113,7 @@
   width: 100% !important;
 }
 
-/** STRETCH SEND BUTTON OUT FULL WIDTH AND GIVE MORE PADDING (ON MOBILE) **/
+#contact button {
+  width: 100%;
+  padding: 3em;
+}
