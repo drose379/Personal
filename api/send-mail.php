@@ -20,4 +20,4 @@ $sendResult = $mailgun->sendMessage(
   )
 );
 
-error_log( $sendResult );
+error_log( json_encode( $sendResult ) );
