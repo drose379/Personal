@@ -66,8 +66,36 @@ window.onload = function() {
   // Handle form submit
   document.getElementById('contact-form').addEventListener( 'submit', function( event ) {
     event.preventDefault();
-    document.getElementById( "send-img" ).style.display="none";
-    document.getElementById( "form-progress" ).style.display="block";
+    var sendicon = document.getElementById( "send-img" );
+    var progress = document.getElementById( "form-progress" );
+
+    sendicon.style.display="none";
+    progress.style.display="block";
+
+    var name = document.getElementById( "first" ).value
+    + " "
+    + document.getElementById( "last" ).value;
+
+    var replyto = document.getElementById( "replyto" ).value;
+    var message = document.getElementById( "msg" ).value;
+
+    var data = {
+      "name": name,
+      "replyto": replyto,
+      "message": message
+    };
+
+    var http = new XMLHttpRequest();
+
+    http.onreadystatechange = function() {
+      if( this.readyState == 4 && this.staus == 200 ) {
+        // Show a swal, if status is anything but 200 and readystate is 4, show error, but switch button back to regular send
+      }
+    }
+
+    http.open( "POST", "http://dylanrose.me/Personal/api/send-mail.php" );
+    http.send( JSON.stringify( data ) );
+
     // Send the data over to api with ajax
     // Switch the send button in the submit button with a loading spinner inside the button
     // Show a swal for 1 second when successfully sent (response from ajax request)
